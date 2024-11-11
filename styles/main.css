@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #1e3932;
+    --secondary-color: #008248;
+    --background-primary-color: #f1f8f6;
+    --background-secondary-color: #d4e9e2;
+    --background-thirdiary-color: #f3f1e7;
+    --font-primary-color: #000000;
+    --font-secondary-color: #f1f8f6;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-primary-color);
+    word-spacing: px;
+    font-stretch: extra-condensed;
+    font-family: 'Noto Sans', 'Helvetica', 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 2.1rem;
+}
+
+
+header {
+    padding: 0px 150px;
+    background-color: white;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+img#starbucks-logo {
+    margin-right: 40px;
+}
+
+ul#menu-navigation {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    list-style: none;
+    gap: 30px;
+}
+
+
+ul#menu-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    width: fit-content;
+    float: right;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+ul#menu-navigation>li {
+    padding: 34px 0px;
+
+}
+
+ul#menu-navigation>li:hover {
+    color: #008248;
+    cursor: pointer;
+}
+
+
+
+
+ul#menu-navigation>li:nth-child(2) {
+    border-bottom: 7px solid var(--secondary-color);
+
+}
+
+button:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+
+.btn {
+    border: 1px solid black;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: .9rem;
+    transition: all .2s;
+}
+
+#find-store-btn:hover {
+    cursor: pointer;
+
+    /* Maneira que encontrei de colorir tanto o ícone 
+    quanto o texto no hover (peguei de um site que gera) */
+    filter: invert(35%) sepia(80%) saturate(7318%) hue-rotate(153deg) brightness(93%) contrast(105%);
+}
+
+#sign-btn:hover {
+    filter: brightness(.95);
+    cursor: pointer;
+}
+
+#join-btn:hover {
+    background-color: rgba(0, 0, 0, 0.705) !important;
+    cursor: pointer;
+}
+
+
+
+a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    transition: all .2s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#join-app-btn {
+    color: #000000;
+}
+
+
+section.rewards-banner {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.171);
+    position: sticky;
+    z-index: 99999;
+    top: 0;
+}
+
+section.rewards-banner>h1 {
+    margin-left: 240px;
+    font-size: 1rem;
+}
+
+section.join-section {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-secondary-color);
+    background-image: url("../assets/star.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    height: 85vh;
+}
+
+section.join-section>.join-section-text {
+    margin-left: 240px;
+}
+
+section.join-section>.join-section-text>h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+section.getting-started-section {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+section.getting-started-section>h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+section.getting-started-section>.getting-started-steps {
+
+    display: flex;
+    gap: 50px;
+    margin: 50px 200px;
+}
+
+section.getting-started-section>.getting-started-steps>.create-account-step {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+section.getting-started-section>.getting-started-steps>.create-account-step>h2 {
+    font-size: 1.3rem;
+    margin: 30px 0px;
+}
+
+section.getting-started-section>.getting-started-steps>.create-account-step>.step-numbers {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border-radius: 100%;
+    border: 2px solid var(--secondary-color);
+}
+
+section.get-favorites-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centerr;
+    height: 50vh;
+}
+
+section.get-favorites-section>.rewards {
+    height: 40%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.171);
+}
+
+section.get-favorites-section>.rewards>h1 {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+.rewards-points {
+    display: flex;
+
+    list-style: none;
+}
+
+.rewards-points>li:nth-child(1) {
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+.rewards-points>li {
+    padding: 20px 30px;
+
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+}
+
+.rewards-points>li:hover {
+
+    cursor: pointer;
+}
+
+.rewards-points>li>span {
+    font-size: .8rem;
+    color: #cba258;
+}
+
+section.get-favorites-section>.customize-drink {
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+    background-color: var(--background-secondary-color);
+    padding: 30px;
+}
+
+section.get-favorites-section>.customize-drink>img {
+    width: 350px;
+}
+
+section.get-favorites-section>.customize-drink>.customize-drink-text>h2 {
+    margin-bottom: 20px;
+}
+
+
+section.get-favorites-section>.customize-drink>.customize-drink-text {
+    width: 350px;
+}
+
+section.extras-section {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+section.extras-section>h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+section.extras-section>.extras-explanation {
+
+    display: flex;
+    gap: 50px;
+    margin: 50px 200px;
+}
+
+.extras-explanation-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+section.extras-section>p {
+    text-align: center;
+    max-width: 700px;
+}
+
+section.extras-section>.extras-explanation>.extras-explanation-item>img {
+    width: 100px;
+}
+
+section.extras-section>.extras-explanation>.extras-explanation-item>a {
+    margin-top: 30px;
+}
+
+section.extras-section>.extras-explanation>.extras-explanation-item>h2 {
+    font-size: 1.3rem;
+    margin: 30px 0px;
+}
+
+section.cash-or-card-section {
+    height: fit-content;
+    display: flex;
+    padding: 30px 15%;
+    font-size: .95rem;
+    align-items: center;
+    background-color: var(--background-thirdiary-color);
+    flex-direction: column;
+    text-align: center;
+}
+
+section.cash-or-card-section>h1 {
+    margin-bottom: 20px;
+}
+
+section.cash-or-card-section>p {
+    max-width: 650px;
+    margin-bottom: 40px;
+}
+
+section.cash-or-card-section>.per-dollar-star {
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    margin: 40px 0px;
+
+}
+
+section.cash-or-card-section>.per-dollar-star>.per-dollar-star-text {
+    text-align: left;
+
+}
+
+.per-dollar-star-text>h2>span {
+    font-size: 1rem;
+}
+
+section.cash-or-card-section>.per-dollar-star>.per-dollar-star-requirements {
+    display: flex;
+}
+
+.star-requirements-item {
+    display: flex;
+    gap: 20px;
+    text-align: left;
+}
+
+
+.star-requirements-item>div>p {
+    max-width: 300px;
+}
+
+.star-requirements-item>div>h2 {
+    margin-bottom: 20px;
+}
+
+.star-requirements-item>img {
+    width: 125px;
+}
+
+section.cash-or-card-section>hr {
+    width: 100%;
+    border-color: rgba(211, 211, 211, 0.267);
+}

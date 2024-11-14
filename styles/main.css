@@ -66,7 +66,6 @@ ul#menu-actions {
     align-items: center;
     gap: 20px;
     list-style: none;
-    width: fit-content;
     float: right;
     font-weight: bold;
     margin-right: 50px;
@@ -181,7 +180,7 @@ section.join-section>.join-section-text>h1 {
 }
 
 section.getting-started-section {
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -195,8 +194,8 @@ section.getting-started-section>h1 {
 }
 
 section.getting-started-section>.getting-started-steps {
-
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     margin: 50px 200px;
 }
@@ -228,11 +227,14 @@ section.get-favorites-section {
     flex-direction: column;
     justify-content: center;
     align-items: centerr;
-    height: 50vh;
+    height: fit-content;
+
 }
 
 section.get-favorites-section>.rewards {
+    padding-top: 25px;
     height: 40%;
+    width: 100%;
     display: flex;
     justify-content: end;
     flex-direction: column;
@@ -280,6 +282,7 @@ section.get-favorites-section>.customize-drink {
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
     background-color: var(--background-secondary-color);
     padding: 30px;
@@ -299,7 +302,7 @@ section.get-favorites-section>.customize-drink>.customize-drink-text {
 }
 
 section.extras-section {
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -313,7 +316,7 @@ section.extras-section>h1 {
 }
 
 section.extras-section>.extras-explanation {
-
+    flex-wrap: wrap;
     display: flex;
     gap: 50px;
     margin: 50px 200px;
@@ -368,6 +371,7 @@ section.cash-or-card-section>p {
 
 section.cash-or-card-section>.per-dollar-star {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     gap: 100px;
     margin: 40px 0px;
